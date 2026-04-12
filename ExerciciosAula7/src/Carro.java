@@ -35,7 +35,7 @@ public class Carro extends Veiculo implements Oficina{
     public double revisao() {
         if(dataConserto.getMonth()== Month.AUGUST)
         {
-            valorCobrado= valorCobrado+ TipoServico.REVISAO.getValorPorServico()* 0.1;
+            valorCobrado= valorCobrado+ TipoServico.REVISAO.getValorPorServico()* 0.9;
             return valorCobrado;
         }
         valorCobrado= valorCobrado+ TipoServico.REVISAO.getValorPorServico();
